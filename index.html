@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Might-Do List. V2</title>
+    <script src="https://kit.fontawesome.com/4c16894797.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link type="image/png" sizes="16x16" rel="icon" href="icons8-list-32.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center vh-100 px-3">
+            <div class="col-11">
+
+                <div class="card shadow-lg rounded-4">
+                    <div class="card-body p-5 d-flex flex-column justify-content-around">
+
+                        <h1 class="mb-4">Might-Do List.</h1>
+                        <div class="input-group mb-2">
+                            <input type="text" id="input" class="form-control"
+                                placeholder="What do you have in your mind?" autofocus>
+                            <button type="submit" id="addBtn" class="btn btn-dark"><i
+                                    class="fa-solid fa-plus plus"></i></button>
+                        </div>
+                        <ul id="list" class="list-group list-group-numbered mt-3">
+                        </ul>
+                        <div class=" mt-5 d-flex justify-content-center align-items-center">
+                            <button id="clrBtn" class="btn btn-dark">Clear All<i
+                                    class="ms-2 fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

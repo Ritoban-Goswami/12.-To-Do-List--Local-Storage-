@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('./blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Source Serif Pro', serif;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 45px;
+}
+
+.card {
+    background-color: #fac748;
+    border: 1.5px solid black;
+    min-height: 60vh;
+    width: 50vw;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 580;
+}
+
+.tasks {
+    background-color: #fac748;
+    border: none;
+    border-bottom: 1px solid rgba(108, 108, 108, 0.465);
+}
+
+.tasks:last-child {
+    border: none;
+}
+
+.close {
+    transition: 80ms font-size;
+}
+
+.close:hover {
+    font-size: 22px;
+}
+
+#addBtn {
+    transition: 250ms background-color;
+}
+
+#addBtn:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+#input::placeholder {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#input {
+    background-color: #fff3d5;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#input:focus {
+    border: 1px solid rgb(0, 0, 0);
+    height: 50px;
+    box-shadow: none;
+}
