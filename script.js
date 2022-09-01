@@ -11,7 +11,7 @@ const loadTasks = () => {
     else {
         tasksArr = JSON.parse(localStorage.getItem('tasks'))
         tasksArr.forEach(storageElem => {
-            list.innerHTML += `<li class="list-group-item py-3 tasks d-flex justify-content-between align-items-center">
+            list.innerHTML += `<li class="list-group-item py-3 d-flex justify-content-between align-items-center">
             ${storageElem}<i class="fa-solid fa-xmark close" onclick ="clrEach(event)"></i>
     </li>`
         })
@@ -28,7 +28,7 @@ const addTask = () => {
     else {
         tasksArr.push(inputValue);
         localStorage.setItem('tasks', JSON.stringify(tasksArr))
-        list.innerHTML += `<li class="list-group-item py-3 tasks d-flex justify-content-between align-items-center">
+        list.innerHTML += `<li class="list-group-item py-3 d-flex justify-content-between align-items-center">
         ${inputValue}<i class="fa-solid fa-xmark close" onclick ="clrEach(event)"></i>
     </li>`
         input.value = ''
