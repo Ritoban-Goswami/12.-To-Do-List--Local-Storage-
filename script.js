@@ -39,7 +39,7 @@ clrEach = (event) => {
     clickedElem = event.target.parentNode.innerText
     tasksArr = tasksArr.filter(t => t !== clickedElem)
     localStorage.setItem('tasks', JSON.stringify(tasksArr))
-    event.target.parentNode.remove();
+    event.target.parentNode.parentNode.remove();
 }
 
 const clearAll = () => {
