@@ -19,17 +19,28 @@ body {
 
 h1 {
     font-family: 'Bree Serif', serif;
-    font-size: 45px;
+    font-size: calc(1rem + 2.4vw);
+}
+
+.input-group {
+    margin: 1.5vw 0;
 }
 
 .card {
     background-color: #fac748;
     border: 1.5px solid black;
     min-height: 60vh;
-    width: 50vw;
+    width: 100%;
     margin: auto;
-    font-size: 18px;
+    font-size: calc(.6rem + .7vw);
     font-weight: 580;
+}
+
+.card-body {
+    padding: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .tasks {
@@ -59,8 +70,12 @@ h1 {
 }
 
 #input::placeholder {
-    font-size: 14px;
+    font-size: calc(0.5rem + .5vw);
     font-weight: bold;
+}
+
+#clrBtn {
+    font-size: calc(.6rem + .7vw);
 }
 
 #input {
@@ -70,6 +85,6 @@ h1 {
 
 #input:focus {
     border: 1px solid rgb(0, 0, 0);
-    height: 50px;
+    /* height: 50px; */
     box-shadow: none;
 }

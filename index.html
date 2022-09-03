@@ -16,23 +16,24 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
+<!-- style="border: 2px solid red;" -->
 
 <body>
     <div class="container-fluid">
-        <div class="row d-flex justify-content-center align-items-center vh-100 px-3">
-            <div class="col-11">
+        <div class="row d-flex justify-content-center vh-100">
+            <div class="col-10 col-lg-9 d-flex justify-content-center align-items-center">
                 <div class="card shadow-lg rounded-4">
-                    <div class="card-body p-5 d-flex flex-column justify-content-around">
-                        <h1 class="mb-4">Might-Do List.</h1>
-                        <div class="input-group mb-2">
+                    <div class="card-body">
+                        <h1>Might-Do List.</h1>
+                        <div class="input-group">
                             <input type="text" id="input" class="form-control"
                                 placeholder="What do you have in your mind?" autofocus>
                             <button type="submit" id="addBtn" class="btn btn-dark"><i
                                     class="fa-solid fa-plus plus"></i></button>
                         </div>
-                        <ul id="list" class="mt-3">
+                        <ul id="list" class="">
                         </ul>
-                        <div class=" mt-5 d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">
                             <button id="clrBtn" class="btn btn-dark">Clear All<i
                                     class="ms-2 fa-solid fa-trash-can"></i></button>
                         </div>
