@@ -29,10 +29,10 @@ h1 {
 .card {
     background-color: #fac748;
     border: 1.5px solid black;
-    min-height: 60vh;
+    /* min-height: 60vh; */
     width: 100%;
     margin: auto;
-    font-size: calc(.6rem + .7vw);
+    font-size: calc(.6rem + .5vw);
     font-weight: 580;
 }
 
@@ -70,12 +70,13 @@ h1 {
 }
 
 #input::placeholder {
-    font-size: calc(0.5rem + .5vw);
+    font-size: calc(0.5rem + .6vw);
+    letter-spacing: 1px;
     font-weight: bold;
 }
 
 #clrBtn {
-    font-size: calc(.6rem + .7vw);
+    font-size: calc(.6rem + .5vw);
 }
 
 #input {
